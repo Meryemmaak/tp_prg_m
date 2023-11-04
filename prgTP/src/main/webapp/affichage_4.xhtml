@@ -10,17 +10,19 @@
     </f:metadata>
 
     <h:head>
-        <title>Application affichage_3</title>
+        <title>Application affichage_4</title>
     </h:head>
     <h:body>
 
-        <h1>Application&gt;affichage_3</h1>
+        <h1>Application&gt;affichage_4</h1>
 
         Les nombres : <br/>
         <ui:repeat value="#{bean.nombresSuivants}" var="n" varStatus="status">
             #{n + 1}#{! status.last ? ', ' : ''}
         </ui:repeat>
         <p/>
-        <h:link outcome="formulaire_3" value="Saisir un autre nombre"/>
+        <h:link outcome="formulaire_4" value="Saisir un autre nombre">
+            <f:param name="nb" value="#{bean2.nombre}"/>
+        </h:link>
     </h:body>     
 </html>

@@ -13,9 +13,9 @@ import java.util.List;
  *
  * @author hp
  */
-@Named(value = "bean")
+@Named(value = "bean2")
 @RequestScoped
-public class Bean {
+public class Bean2 {
 
     private int nombre;
 
@@ -28,7 +28,9 @@ public class Bean {
     }
 
     /**
-     * Cette méthode retourne une liste de nombres suivants à partir du "nombre"saisi.
+     * Cette méthode retourne une liste de nombres suivants à partir du "nombre"
+     * saisi.
+     *
      * @return
      */
     public List<Integer> getNombresSuivants() {
@@ -48,6 +50,6 @@ public class Bean {
      * @return
      */
     public String afficher() {
-        return "affichage_3?nb=" + nombre + "&amp;faces-redirect=true";
+        return "affichage_4?nb=" + nombre + "&amp;faces-redirect=true";
     }
 }
