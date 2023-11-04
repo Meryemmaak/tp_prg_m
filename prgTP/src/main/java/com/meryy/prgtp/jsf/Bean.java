@@ -27,6 +27,13 @@ public class Bean {
         this.nombre = nombre;
     }
 
+    /**
+     * Cette méthode retourne une liste de nombres suivants à partir du "nombre"
+     * saisi.
+     *
+     * @return
+     */
+
     public List<Integer> getNombresSuivants() {
         int nb = 5;
         List<Integer> l = new ArrayList<>(nb);
@@ -34,5 +41,16 @@ public class Bean {
             l.add(i);
         }
         return l;
+    }
+
+    /**
+     * Méthode "afficher" qui génère une chaîne de caractères pour la
+     * redirection. Elle renvoie une chaîne représentant l'URL de redirection, y
+     * compris le paramètre "nb" avec la valeur de "nombre".
+     *
+     * @return
+     */
+    public String afficher() {
+        return "affichage_3?nb=" + nombre + "&amp;faces-redirect=true";
     }
 }
