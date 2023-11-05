@@ -21,8 +21,6 @@
             #{n + 1}#{! status.last ? ', ' : ''}
         </ui:repeat>
         <p/>
-        <h:link outcome="formulaire_4" value="Saisir un autre nombre">
-            <f:param name="nb" value="#{bean2.nombre}"/>
-        </h:link>
+        <h:link outcome="formulaire_4?nb=#{bean2.nombre}" value="Saisir un autre nombre"/>
     </h:body>     
 </html>
